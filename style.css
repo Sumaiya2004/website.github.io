@@ -1,0 +1,127 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-family:sans-serif;
+}
+body{
+    width: 100%;
+    min-width:100vh;   
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding:20px 30px;
+    font-size: 20px;
+    color:purple;
+    animation: header 2s ease-in-out;
+    text-shadow: 0px 0px 9px purple;
+}
+@keyframes header{
+    0%{
+        transform: translateY(-100%);
+    }
+    
+}
+nav li{
+    display: inline-block;
+    margin-right: 70px;
+    font-weight: bold;
+}
+.content{
+    width:100%;
+    margin-top: 2%;
+    margin-right: 15%;
+    color:whitesmoke;
+    text-shadow:0px 0px 5px purple ;
+    animation: content 2s ease-in-out;
+}
+@keyframes content{
+    0%{
+        opacity:0%;
+        transform:translateX(-50%);
+    }
+}
+.content h1{
+    font-size: 75px;
+    margin-bottom: 2%;
+    letter-spacing: 6px;
+}
+.content h3{
+    font-size: 30px;
+    margin-bottom: 3%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+span{
+    color: purple;
+}
+.content p{
+    font-size: 20px;
+    margin-bottom: 3%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+button{
+    padding: 15px 30px;
+    background: transparent;
+    color:white;
+    font-size: 15px;
+    border-radius: 20px;
+}
+button:hover{
+    background: purple;
+}
+.image{
+    width: 50px;
+}
+img{
+    display: flex;
+    justify-content: center;
+    width: 40rem;
+    animation: car 5s ease-in-out;
+}
+@keyframes car{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translate(-200%);
+    }
+}
+@media screen and (max-width:1200px){
+    .content{
+        width: 100%;
+        text-align: center;
+    }
+.image{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;   
+}
+img{
+    width: 40rem;  
+}
+}@media screen and (max-width:576px){
+    nav li{
+        padding: 0px 100px;
+        width:70rem;  
+    }
+    .content{
+        margin-right:25%;
+        width: 25rem;
+        text-align: center;
+    }
+.content h1,h3,p{
+    margin-bottom: 5%;
+}
+.image{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+img{
+    width: 20rem;  
+}
+}
